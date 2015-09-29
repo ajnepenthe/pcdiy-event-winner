@@ -1,0 +1,673 @@
+body
+	font-family: Verdana, Arial, Helvetica, sans-serif
+
+.page
+	margin: 0 auto
+  
+	+min-w1024
+		width: 1006px
+		+box-shadow(0 0 20px rgba(0,0,0,.15))
+	
+	.menu-main
+		position: fixed
+		width: 100%
+		top: 0
+		left: 0
+		background-color: rgba(233,198,71,.95)
+		z-index: 98
+
+		+min-w768
+			margin-top: 30px
+			position: relative
+			background-color: transparent
+
+		+min-w992
+			margin-top: 50px
+
+	.menu-sub
+		position: fixed
+		text-align: right
+		top: 0
+		right: 10px
+		text-align: right
+		z-index: 100
+
+		+min-w768
+			position: relative
+			top: 0
+			right: 0
+			margin: 40px auto 0
+			text-align: center
+
+		li
+			display: inline-block
+
+			+min-w768
+				margin: 0 26px
+
+			a
+				display: block
+				width: 30px
+				height: 60px
+				color: #fff
+				text-align: center
+
+				&:hover
+					color: #392366
+
+				+min-w768
+					width: 30px
+					height: 30px
+					color: #392366
+					background-color: $gold-m
+					+border-radius(50%)
+
+					&:hover
+						background-color: $gold-l
+			
+				.fa
+					font-size: 24px
+					font-size: 2.4rem
+					line-height: 60px
+
+					+min-w768
+						font-size: 18px
+						font-size: 1.8rem
+						line-height: 30px
+	.is-sticky
+		
+		+min-w768
+			.menu-main
+				margin-top: 0
+				z-index: 99
+			
+			.navbar-nav
+				margin: 0
+				background-color: rgba(32,5,85,.9)
+				border-bottom: none
+				
+				& > li
+					margin-bottom: 0
+
+					a
+						padding-top: 20px
+						padding-bottom: 20px
+
+			.navbar-inverse .navbar-nav > li > a:hover
+				border-bottom-width: 4px
+
+			.navbar-inverse .navbar-nav a.active,
+			.navbar-inverse .navbar-nav a.active:hover,
+			.navbar-inverse .navbar-nav a.active:focus
+				border-bottom-width: 4px
+
+			.menu-sub
+				padding-top: 17px
+				right: 17px
+				margin: 0
+				z-index: 100
+
+				li
+					margin: 0 0 0 10px
+
+		+min-w992
+			
+			.navbar-nav
+				width: 1006px
+				margin: 0 auto
+
+			.menu-sub
+				right: 50%
+				margin-right: -486px
+
+	.btn-vote
+		display: block
+		width: 170px
+		height: 50px
+		line-height: 24px
+		padding: 13px 0
+		font-size: 16px
+		font-size: 1.6rem
+		text-align: center
+		text-decoration: none
+		margin: 0 auto
+		+border-radius(25px)
+	
+	h2
+		text-align: center
+		font-size: 20px
+		font-size: 2rem
+		line-height: 20px
+		font-weight: 100
+		color: $gold-dd
+		margin-bottom: 0
+
+		span
+			position: relative
+			padding: 0 35px
+
+			&:before,
+			&:after
+				content: ""
+				position: absolute
+				width: 20px
+				height: 20px
+				background: url(../../images/item-spackle.png) no-repeat 50%
+
+			&:before
+				left: 0
+
+			&:after
+				right: 0
+
+	h3
+		text-align: center
+		font-size: 36px
+		font-size: 3.6rem
+		font-weight: 100
+		margin-top: 10px
+		margin-bottom: 0
+
+	h4
+		color: #1f1f1f
+		font-size: 18px
+		font-size: 1.8rem
+		border-bottom: 1px solid #dacfa3
+		margin-bottom: 0
+
+		span
+			display: inline-block
+			padding: 15px 0
+			border-bottom: 1px solid $gold-dd
+			margin-bottom: -1px
+	
+	.description
+		text-align: center
+		color: #4a4a4a
+		margin-top: 100px
+		font-size: 18px
+		font-size: 1.8rem
+
+		+min-w992
+			padding: 0 100px
+
+	.scrollspy
+		padding: 100px 30px
+
+	.box-intro
+		position: relative
+		background-position: 50%
+		background-repeat: no-repeat
+		background-image: url(../../images/bg-intro-1024x800.png)
+		background-color: #200555
+		padding: 60px 0 40px 0
+
+		+min-w768
+			padding-top: 0
+
+		img
+			max-width: 100%
+		
+		.inner
+			width: 290px
+			margin: 0 auto
+			padding-top: 40px
+			
+			+min-w480
+				width: 420px
+
+			+min-w640
+				width: 525px
+				padding-top: 50px
+
+			+min-w992
+				width: 100%
+				padding-top: 86px
+
+			.title
+				
+				+min-w992
+					float: left
+					margin-left: 99px
+
+				+min-w1024
+					margin-left: 119px
+
+			.block
+					
+
+				+min-w992
+					float: right
+					padding-top: 75px
+					margin-right: 113px
+
+				+min-w1024
+					float: left
+					margin: 0 0 0 38px
+			
+				.date
+					width: 246px
+					height: 65px
+					text-align: center
+					margin: 20px auto 0
+					background: url(../../images/item-intro-date-s.png) no-repeat 50%
+					
+					+min-w480
+						width: 308px
+						height: 81px
+						margin: 30px auto 0
+						background-image: url(../../images/item-intro-date-l.png)
+
+					+min-w992
+						width: 168px
+						height: 154px
+						margin: 0 0 0 11px
+						background-image: url(../../images/item-intro-date-b.png)
+
+				.btn-vote
+					background-color: #fff
+					margin-top: 20px
+
+					&:hover
+						background-color: $gold-m
+						color: #fff
+
+					+min-w480
+						margin-top: 30px
+
+					+min-w992
+						margin-top: 27px
+		
+		.logo
+			position: fixed
+			display: block
+			width: 106px
+			height: 32px
+			top: 14px
+			left: 50%
+			margin-left: -53px
+			z-index: 100
+
+			+min-w768
+				display: none
+
+			img
+				max-width: 100%
+
+		.is-sticky + .logo
+			+min-w768
+				display: block
+				width: 100px
+				height: 30px
+				top: 17px
+				left: 17px
+				margin-left: 0
+
+			+min-w992
+				left: 50%
+				margin-left: -486px
+
+		.logo-s
+			display: none
+
+			+min-w768
+				display: block
+				position: absolute
+				width: 30px
+				height: 30px
+				bottom: 40px
+				left: 50%
+				margin-left: -15px
+				z-index: 100
+				background-color: $gold-m
+				+border-radius(50%)
+				text-align: center
+
+				&:hover
+					background-color: $gold-l
+
+			img
+				margin-top: 3px
+				max-width: 65%
+
+	.box-vote
+		background-color: #fff
+
+		.slide-brand
+			margin-top: 90px
+			padding-top: 33px
+			background: url(../../images/item-cup.png) no-repeat 50% 0
+			
+			&:after
+				content: ""
+				display: block
+				width: 210px
+				height: 150px
+				position: absolute
+				top: 33px
+				left: 50%
+				margin-left: -105px
+				border: 3px solid $gold-m
+
+				+min-w480
+					width: 280px
+					height: 200px
+					margin-left: -140px
+
+				+min-w640
+					width: 210px
+					height: 150px
+					margin-left: -105px
+
+				+min-w992
+					width: 140px
+					height: 100px
+					margin-left: -70px
+
+			.slick-slide
+				width: 210px
+				height: 150px
+				
+				+min-w480
+					width: 280px
+					height: 200px
+
+				+min-w640
+					width: 210px
+					height: 150px
+
+				+min-w992
+					width: 140px
+					height: 100px
+
+		.btn-vote
+			margin-top: 100px
+			background-color: $gold-dd
+			color: #fff
+
+			&:hover
+				background-color: $gold-m
+
+	.box-way
+		background-color: #f6f6f4
+
+		+min-w992
+			padding-left: 160px
+			padding-right: 160px
+
+		.inner
+			margin-top: 30px
+
+			ul
+				font-size: 16px
+				font-size: 1.6rem
+				color: #1f1f1f
+				line-height: 1.75
+				padding: 30px 0 70px 0
+				list-style-type: disc
+
+				li
+					margin: 10px 0 0 2rem
+
+			.block
+				margin-top: 30px
+				
+				.date
+					width: 220px
+					height: 66px
+					margin: 0 auto
+					background: url(../../images/item-date-s.png) no-repeat 50%
+					
+					+min-w480
+						width: 275px
+						height: 82px
+						background-image: url(../../images/item-date.png)
+
+					+min-w640
+						float: left
+						margin: 0
+
+				.btn-vote
+					margin-top: 30px
+					background-color: $gold-dd
+					color: #fff
+
+					&:hover
+						background-color: $gold-m
+
+					+min-w640
+						margin-top: 32px
+						float: right
+	.box-gift
+		background-color: #fff
+		padding-bottom: 70px
+
+		.inner
+			+min-w400
+				padding: 0 60px
+
+			+min-w480
+				padding: 0
+
+			+min-w640
+				padding: 0 40px
+
+			+min-w768
+				padding: 0 30px
+
+			+min-w992
+				padding: 0
+
+			.item-gift
+				padding: 10px 10px 30px 10px
+
+				+min-w480
+					float: left
+					width: 50%
+
+				+min-w768
+					width: 33.33333%
+
+				+min-w992
+					width: 25%
+				
+				.img
+					text-align: center
+					height: 200px
+					border: 1px solid $grey-color-light
+					margin-bottom: 15px
+
+					&:before
+						content: ""
+						display: inline-block
+						vertical-align: middle
+						height: 100%
+
+					img
+						display: block
+						max-width: 100%
+						max-height: 100%
+						font-size: inherit
+						display: inline-block
+						vertical-align: middle
+
+				.brand
+					font-size: 16px
+					font-size: 1.6rem
+					color: #1a1a1a
+					line-height: 1.5
+
+				.product
+					font-size: 18px
+					font-size: 1.8rem
+					color: #1a1a1a
+					line-height: 24px
+
+					+min-w480
+						height: 72px
+						overflow: hidden
+						text-overflow: ellipsis
+
+
+
+				.other
+					font-size: 15px
+					font-size: 1.5rem
+					color: #999
+					
+
+	.box-winner
+		background-color: #f6f6f4
+
+		.inner
+			margin-top: 30px
+			
+			+min-w640
+				border: 4px solid $gold-m
+				padding: 20px
+
+			+min-w992
+				border-width: 8px
+				padding: 40px
+				margin: 30px 80px 0
+
+			.winner
+				padding-top: 100px
+				background-repeat: no-repeat
+				background-position: 50% 10px
+				text-align: center
+
+				&.brand
+					background-image: url(../../images/item-award-01.png)
+					padding-bottom: 60px
+					border-bottom: 5px solid $gold-m
+					margin-bottom: 90px
+
+					.remark p
+						color: $grey-color
+
+				&.player
+					background-image: url(../../images/item-award-02.png)
+					
+					.remark p
+						color: #f06292
+						text-align: left
+
+				.title
+
+				span
+					display: inline-block
+					position: relative
+					padding: 30px 60px 0
+					background: url(../../images/logo-blue.png) no-repeat 50% 0
+					background-size: 86px 26px
+
+					&:before,
+					&:after
+						content: ""
+						position: absolute
+						width: 47px
+						height: 81px
+						background-repeat: no-repeat
+						background-position: 0
+						top: 50%
+						margin-top: -40px
+
+					&:before
+						left: 0
+						background-image: url(../../images/item-glory-01.png)
+
+					&:after
+						right: 0
+						background-image: url(../../images/item-glory-02.png)
+
+					b
+						font-size: 28px
+						font-size: 2.8rem
+					
+					em
+						font-size: 12px
+						font-size: 1.2rem
+
+				.wrapper
+					margin-top: 30px
+
+				.list
+					
+					
+					li
+						margin-top: 40px
+
+						.title
+							font-size: 18px
+							font-size: 1.8rem
+							color: $gold-dd
+
+
+						.win
+
+				.remark
+					margin-top: 80px
+
+					a
+						display: inline-block
+						padding: 15px 20px
+						border: 1px solid $gold-dd
+						color: $grey-color-darkest
+						text-decoration: none
+
+						&:hover
+							color: $gold-dd
+							border-color: $gold-m
+
+					ul
+						text-align: left
+						list-style-type: decimal
+						margin-left: 25px
+
+						li
+							padding-bottom: 10px
+
+							em
+								padding: 0 5px
+								color: #f06292
+
+
+
+	.footer
+		background-color: $gold-m
+		padding: 60px 30px 40px
+		
+
+		ul
+			position: relative
+			margin: 0 auto 30px
+			text-align: center
+
+			li
+				display: inline-block
+				margin: 0 6px
+
+				a
+					display: block
+					color: $gold-m
+					width: 30px
+					height: 30px
+					background-color: #fff
+					+border-radius(50%)
+
+					&:hover
+						color: #392366
+						background-color: $gold-l
+						
+					.fa
+						font-size: 18px
+						font-size: 1.8rem
+						line-height: 30px
+		p
+			font-size: 12px
+			font-size: 1.2rem
+			color: #fff
+			text-align: center
+			margin: 0
+

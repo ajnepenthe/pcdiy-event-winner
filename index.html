@@ -1,57 +1,391 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>pcdiy-event-winner by ajnepenthe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">pcdiy-event-winner</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/ajnepenthe/pcdiy-event-winner" class="btn">View on GitHub</a>
-      <a href="https://github.com/ajnepenthe/pcdiy-event-winner/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/ajnepenthe/pcdiy-event-winner/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <link rel="stylesheet" type="text/css" href="style/css/public.css">
+    <link rel="stylesheet" type="text/css" href="style/css/slick.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/layout.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="page">
+    <!-- 首頁 start -->
+    <div id="sec1" class="box-intro  scrollspy">
+        <!-- 主視覺 start -->
+        <div class="inner  clearfix">
+            <div class="title"><img src="images/item-intro-title.png"></div>
+            <div class="block  clearfix">
+                <div class="date"></div>
+                <a href="#" class="btn-vote">前往投票</a>
+            </div>
+        </div>
+        <!-- 主視覺 end -->
+        <!-- 選單 start -->
+        <div class="menu-main">
+            <div id="navbar" class="navbar  navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle  collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse  navbar-collapse" id="bs-example-navbar-collapse-2">
+                        <ul class="nav  navbar-nav">
+                            <li><a href="#sec1">活動大賞</a></li>
+                            <li><a href="#sec2">我要投票</a></li>
+                            <li><a href="#sec3">投票辦法</a></li>
+                            <li><a href="#sec4">投票好禮</a></li>
+                            <li><a href="#sec5">得獎公佈</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 選單 end -->
+        <!-- 次要按鈕 start -->
+        <ul class="menu-sub  clearfix">
+            <li><a href="#sec1"><i class="fa  fa-home"></i></a></li>
+            <li><a href="http://www.facebook.com/pcdiy" target="_blank"><i class="fa  fa-facebook"></i></a></li>
+        </ul>
+        <!-- 次要按鈕 end -->
+        <a href="http://www.pcdiy.com.tw" class="logo" target="_blank"><img src="images/logo.png"></a>
+        <a href="http://www.pcdiy.com.tw" class="logo-s" target="_blank"><img src="images/logo-s.png"></a>
+    </div>
+    <!-- 首頁 end -->
+    <!-- 我要投票 start -->
+    <div id="sec2" class="box-vote  scrollspy">
+        <h2><span>我要投票</span></h2>
+        <h3>玩家最愛第一品牌，您自己來票選</h3>
+        <div class="slide-brand">
+            <div><img src="images/brand/AMD.png"></div>
+            <div><img src="images/brand/ASRock.png"></div>
+            <div><img src="images/brand/ASUS.png"></div>
+            <div><img src="images/brand/Buffalo.jpg"></div>
+            <div><img src="images/brand/Coolermaster.png"></div>
+            <div><img src="images/brand/ENERMAX.jpg"></div>
+            <div><img src="images/brand/GIGABYTE.jpg"></div>
+            <div><img src="images/brand/Intel.png"></div>
+            <div><img src="images/brand/Kingston.jpg"></div>
+            <div><img src="images/brand/Lenovo.png"></div>
+            <div><img src="images/brand/logitech.jpg"></div>
+            <div><img src="images/brand/msi.png"></div>
+            <div><img src="images/brand/msi-gaming.jpg"></div>
+            <div><img src="images/brand/Philips.png"></div>
+            <div><img src="images/brand/Roccat.jpg"></div>
+            <div><img src="images/brand/sharkoon.jpg"></div>
+            <div><img src="images/brand/Thermaltake.jpg"></div>
+        </div>
+        <a href="#" class="btn-vote">前往投票</a>
+    </div>
+    <!-- 我要投票 end -->
+    <!-- 投票辦法 start -->
+    <div id="sec3" class="box-way  scrollspy">
+        <h2><span>投票辦法</span></h2>
+        <div class="inner">
+            <h4><span>活動辦法</span></h4>
+            <ul>
+                <li>請於 10.19~11.19 期間點選『我要投票』連結進行投票。</li>
+                <li>請依照各類別票選項目，選出您心目中該項第一品牌的廠商(可複選)。</li>
+                <li>全部填妥後請填寫個人基本資料，若個人基本資料填寫不完整，將喪失抽獎機會。</li>
+                <li>參與票選活動的讀者將可參加抽獎活動，獎品非常豐富，詳細請見以下介紹。</li>
+                <li>中獎者僅限領有中華民國國民身分證者，PCDIY!對活動內容以及贈品保留修改及最後解釋的權利。</li>
+            </ul>
+            <h4><span>活動時間</span></h4>
+            <div class="block  clearfix">
+                <div class="date"></div>
+                <a href="#" class="btn-vote">前往投票</a>
+            </div>
+        </div>
+    </div>
+    <!-- 投票辦法 end -->
 
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+    <!-- 投票好禮 start -->
+    <div id="sec4" class="box-gift  scrollspy">
+        <h2><span>投票好禮</span></h2>
+        <h3>品牌大賞投票抽獎獎品</h3>
+        <p class="description">只要參加PCDIY!所舉辦的2015玩家票選品牌大賞活動，完成投票問卷並留下完整基本資料即可參加抽獎。獎品非常豐富，好康不斷。</p>
+        <div class="inner  clearfix">
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/250x250/"></div>
+                <p class="brand">錸德提供</p>
+                <p class="product">RITEK LED 10W 白光燈泡</p>
+                <p class="other">10組，建議售價NT$ 349</p>   
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">WD提供/p>
+                <p class="product">WD Green 6 TB燈泡</p>
+                <p class="other">2組，建議售價NT$ 7,988</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">微星提供</p>
+                <p class="product">MSI Steelseries FLUX電競摺疊耳麥燈泡</p>
+                <p class="other">1組，建議售價NT$ 2,999</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">艾芮克提供</p>
+                <p class="product">i-rocks IRM09 ROCK系列 遊戲滑鼠燈泡</p>
+                <p class="other">3組，建議售價NT$ 1,099</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/250x250/"></div>
+                <p class="brand">巴比祿提供</p>
+                <p class="product">WZR-900DHP燈泡</p>
+                <p class="other">2組，建議售價NT$ 3,388</p>   
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">迎廣提供</p>
+                <p class="product">IN WIN 904 (銀色)燈泡</p>
+                <p class="other">1組，建議售價NT$ 7,990</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">迎廣提供</p>
+                <p class="product">IN WIN 904 (金色限量版) 台灣未上市燈泡</p>
+                <p class="other">1組，建議售價US$ 269</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">藍寶提供</p>
+                <p class="product">SAPPHIRE HD 6850 1GB GDDR5 Vapor-X (9成新樣品/不提供保固)燈泡</p>
+                <p class="other">1組，建議售價NT$ 4,500</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/250x250/"></div>
+                <p class="brand">OZAKI提供</p>
+                <p class="product">OZAKI CS3150R 3.1風潮機燈泡</p>
+                <p class="other">3組，建議售價NT$ 2,690</p>   
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">建達-TP提供</p>
+                <p class="product">TP-Link AC750 無線雙頻Gigabit路由器燈泡</p>
+                <p class="other">1組，建議售價NT$ 1,588</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">建達-TP提供</p>
+                <p class="product">TP-LINK TL-WR841HP 300Mbps 高功率無線N路由器燈泡</p>
+                <p class="other">1組，建議售價NT$ 1,199</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">NZXT提供</p>
+                <p class="product">NZXT KRAKEN X41 一體式水冷燈泡</p>
+                <p class="other">1組</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">NZXT提供</p>
+                <p class="product">NZXT GRID+ 數位式風扇轉速控制器燈泡</p>
+                <p class="other">3組</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">雅浩家具提供</p>
+                <p class="product">雅浩家具 Enrelop Desk燈泡</p>
+                <p class="other">1組，建議售價NT$ 43,500</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">T.C.STAR提供</p>
+                <p class="product">T.C.STAR TCC924SGD燈泡</p>
+                <p class="other">1組，建議售價NT$ 990</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">T.C.STAR提供</p>
+                <p class="product">T.C.STAR N400燈泡</p>
+                <p class="other">1組，建議售價NT$ 1,190</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">T.C.STAR提供</p>
+                <p class="product">T.C.STAR TCN291GR燈泡</p>
+                <p class="other">1組，建議售價NT$ 699</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">T.C.STAR提供</p>
+                <p class="product">T.C.STAR TCN291CU燈泡</p>
+                <p class="other">1組，建議售價NT$ 699</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">T.C.STAR提供</p>
+                <p class="product">T.C.STAR TCH100燈泡</p>
+                <p class="other">1組，建議售價NT$ 699</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">T.C.STAR提供</p>
+                <p class="product">T.C.STAR TCE8767BK燈泡</p>
+                <p class="other">1組，建議售價NT$ 699</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">T.C.STAR提供</p>
+                <p class="product">T.C.STAR TCE8767WE燈泡</p>
+                <p class="other">1組，建議售價NT$ 699</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">Kingston提供</p>
+                <p class="product">HyperX FURY 120GB SSD燈泡</p>
+                <p class="other">1組，建議售價NT$ 2,190</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">GIGABYTE提供</p>
+                <p class="product">G1.SNIPER Z6燈泡</p>
+                <p class="other">1組，建議售價NT$ 3,990</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">GIGABYTE提供</p>
+                <p class="product">BRIX Projector (GB-BXPi3-4010)燈泡</p>
+                <p class="other">1組，建議售價NT$ 14,990</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">PLEXTOR提供</p>
+                <p class="product">Plextor M6S 256GB 2.5吋SSD燈泡</p>
+                <p class="other">1組，建議售價NT$ 5,090</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">PLEXTOR提供</p>
+                <p class="product">Plextor M6e 128GB PCIe SSD燈泡</p>
+                <p class="other">1組，建議售價NT$ 6,990</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">PLEXTOR提供</p>
+                <p class="product">Plextor M6S 128GB 2.5吋SSD燈泡</p>
+                <p class="other">1組，建議售價NT$ 3,090</p> 
+            </div>
+            <div class="item-gift">
+                <div class="img"><img src="http://fakeimg.pl/350x350/"></div>
+                <p class="brand">PLEXTOR提供</p>
+                <p class="product">Plextor 電競專用滑鼠墊燈泡</p>
+                <p class="other">5組，建議售價NT$ 300</p> 
+            </div>
+        </div>
+    </div>
+    <!-- 投票好禮 end -->
+    <!-- 得獎公佈 start -->
+    <div id="sec5" class="box-winner  scrollspy">
+        <h2><span>得獎公佈</span></h2>
+        <div class="inner">
+            <div class="winner brand">
+                <div>
+                    <span>
+                        <b>玩家票選最佳品牌</b>
+                        <br>
+                        <em>The 11th Best Brand 2015</em>
+                    </span>
+                </div>
+                <p class="wrapper">感謝大家對於PCDIY!玩家票選品牌大賞活動的支持，票選活動已於2015年11月30日截止投票，總計累積投票數達999,999票，經過了這段期間的投票，由大家所選出個產品類別中的玩家最佳品牌也終於產生，投票結果公佈如下，廠商順序按照英文名稱進行排列。</p>
+                <ul class="list">
+                    <li>
+                        <p class="title">網路監控攝影機</p>
+                        <p class="win">蘋果、華碩、聯想電腦、卡巴斯基、趨勢科技</p>
+                    </li>
+                    <li>
+                        <p class="title">網路監控攝影機</p>
+                        <p class="win">蘋果、華碩、聯想電腦、卡巴斯基、趨勢科技</p>
+                    </li>
+                    <li>
+                        <p class="title">網路監控攝影機</p>
+                        <p class="win">蘋果、華碩、聯想電腦、卡巴斯基、趨勢科技</p>
+                    </li>
+                    <li>
+                        <p class="title">網路監控攝影機</p>
+                        <p class="win">蘋果、華碩、聯想電腦、卡巴斯基、趨勢科技</p>
+                    </li>
+                    <li>
+                        <p class="title">網路監控攝影機</p>
+                        <p class="win">蘋果、華碩、聯想電腦、卡巴斯基、趨勢科技</p>
+                    </li>
+                    <li>
+                        <p class="title">網路監控攝影機</p>
+                        <p class="win">蘋果、華碩、聯想電腦、卡巴斯基、趨勢科技</p>
+                    </li>
+                </ul>
+                <div class="remark">
+                    <p>詳細得票百分比與排名請到官方網站瀏覽</p>
+                    <a href="#">2015第十一屆PCDIY!<br>玩家票選品牌大賞結果公佈</a>
+                </div>
+            </div>
+            <div class="winner player">
+                <div>
+                    <span>
+                        <b>品牌票選活動得主</b>
+                        <br>
+                        <em>The 11th Best Brand 2015</em>
+                    </span>
+                </div>
+                <p class="wrapper">這次活動能圓滿成功，非常感謝大家的參與，為了感謝大家，這是我們也準備了許多投票好禮要送給大家。幸運得主公佈如後，投票好禮數量皆為1組。在公佈得獎者之後，我們將於近日內與得獎者聯繫，由於投票好禮數量非常多，處理時間會較久，請得獎人耐心等候。活動小組會盡快與您聯繫。</p>
+                <ul class="list">
+                    <li>
+                        <p class="title">RITEK LED 10W 白光燈泡</p>
+                        <p class="win">林市民、林市民、林市民</p>
+                    </li>
+                    <li>
+                        <p class="title">WD Green 6 TB燈泡</p>
+                        <p class="win">林市民</p>
+                    </li>
+                    <li>
+                        <p class="title">MSI Steelseries FLUX電競摺疊耳麥燈泡</p>
+                        <p class="win">林市民、林市民、林市民</p>
+                    </li>
+                    <li>
+                        <p class="title">i-rocks IRM09 ROCK系列 遊戲滑鼠燈泡</p>
+                        <p class="win">林市民、林市民</p>
+                    </li>
+                    <li>
+                        <p class="title">WZR-900DHP燈泡</p>
+                        <p class="win">林市民、林市民、林市民</p>
+                    </li>
+                    <li>
+                        <p class="title">IN WIN 904 (銀色)燈泡</p>
+                        <p class="win">林市民</p>
+                    </li>
+                </ul>
+                <div class="remark">
+                    <p>注意事項</p>
+                    <ul>
+                        <li>最後領獎時間<em>2015年12月19日</em>。中獎人若於最後領獎日前無法聯繫或領獎，將取消中獎資格。</li>
+                        <li>領獎程序須依公司規定，並提供必要的身分證明文件以核對與參加者姓名是否相符，若不符合將取消得獎資格。</li>
+                        <li>PCDIY!對活動內容以及贈品，保留修改及最後解釋的權利。</li>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 得獎公佈 end -->
+    <!-- 版尾 start -->
+    <div class="footer">
+        <ul class="clearfix">
+            <li><a href="#sec1"><i class="fa  fa-home"></i></a></li>
+            <li><a href="http://www.facebook.com/pcdiy" target="_blank"><i class="fa  fa-facebook"></i></a></li>
+        </ul>
+        <p>Copyright© FLAG DIGITAL CO., LTD. 旗訊數位股份有限公司. All rights reserved.</p>
+        <p>本站圖文著作權所有 未經授權 不得任意轉載使用</p>
+    </div>
+    <!-- 版尾 end -->
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/ajnepenthe/pcdiy-event-winner">pcdiy-event-winner</a> is maintained by <a href="https://github.com/ajnepenthe">ajnepenthe</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
-  </body>
+</div>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
 </html>

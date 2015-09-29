@@ -1,0 +1,59 @@
+$grey-color-lightest: #fafafa
+$grey-color-lighter: #eee
+$grey-color-light: #bdbdbd
+$grey-color: #9e9e9e
+$grey-color-darker: #616161
+$grey-color-darkest: #000000
+
+$cyan-color-lightest: #b2ebf2
+$cyan-color-lighter: #4dd0e1
+$cyan-color: #00bcd4
+$cyan-color-darker: #0097a7
+$cyan-color-darkest: #006064
+
+$pink-color-lightest: #f8bbd0 
+$pink-color-lighter: #f06292
+$pink-color: #e91e63
+$pink-color-darker: #c2185b
+$pink-color-darkest: #880e4f
+
+$gold-l: #e8e3cd
+$gold-m: #e9c647
+$gold-d: #c8b772
+$gold-dd: #a5850d
+
+@mixin transition($transition-property, $transition-time, $method)
+	-webkit-transition: $transition-property $transition-time $method
+	-moz-transition: $transition-property $transition-time $method
+	-ms-transition: $transition-property $transition-time $method
+	-o-transition: $transition-property $transition-time $method
+	transition: $transition-property $transition-time $method
+
+
+@mixin min-w400
+	@media(min-width:400px)
+		@content
+
+@mixin min-w480
+	@media(min-width:480px)
+		@content
+
+@mixin min-w640
+	@media(min-width:640px)
+		@content
+
+@mixin min-w768
+	@media(min-width:768px)
+		@content
+
+@mixin min-w992
+	@media(min-width:992px)
+		@content
+
+@mixin min-w1024
+	@media(min-width:1024px)
+		@content
+
+@mixin min-w1200
+	@media(min-width:1200px)
+		@content
