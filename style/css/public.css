@@ -646,7 +646,7 @@ td, th { padding: 0; }
 
 html { font-size: 10px; -webkit-tap-highlight-color: transparent; }
 
-body { font-family: Helvetica, Verdana, "LiHei Pro", "新細明體", PMingLiU, sans-serif; font-size: 15px; line-height: 1.42857; color: #000000; background-color: #fafafa; }
+body { font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "微軟正黑體", "Microsoft JhengHei", "Heiti TC", sans-serif; font-size: 15px; line-height: 1.42857; color: #000000; background-color: #fafafa; }
 
 input, button, select, textarea { font-family: inherit; font-size: inherit; line-height: inherit; }
 
@@ -2623,8 +2623,6 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus { b
 .modal .close { color: #2c3e50; }
 
 .popover { color: #2c3e50; }
-
-body { font-family: Verdana, Arial, Helvetica, sans-serif; }
 
 .page { margin: 0 auto; }
 @media(min-width:1024px) { .page { width: 1006px; -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); } }
