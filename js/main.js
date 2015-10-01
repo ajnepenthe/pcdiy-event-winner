@@ -1,23 +1,22 @@
-
-$(".menu-main").sticky({topSpacing:0});
-$(".menu-sub").sticky({topSpacing:0});
-
-$(document).ready(function(){
-    $('.scrollspy').scrollSpy();
-});
-
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
+$(function () {
+  $('.menu-main').stickyNavbar({
+    sectionSelector: "scrollspy",
+    stickyModeClass: "is-sticky",
+    activeClass: "active",
+    selector: "a",
+    zindex: 99
+  });
+  $('.menu-sub').stickyNavbar({
+    stickyModeClass: "is-sticky",
+    zindex: 100,
+    startAt: -50,
+    animDuration: 350,
+    easing: 'swing',
+    animateCSS: false,
+    animateCSSRepeat: false,
+    cssAnimation: 'fadeInDown',
+    jqueryEffects: false,
+    jqueryAnim: 'slideDown'
   });
 });
 

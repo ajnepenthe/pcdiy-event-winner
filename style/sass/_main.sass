@@ -14,12 +14,8 @@
 		z-index: 98
 
 		+min-w768
-			margin-top: 30px
 			position: relative
 			background-color: transparent
-
-		+min-w992
-			margin-top: 50px
 
 	.menu-sub
 		position: fixed
@@ -74,7 +70,7 @@
 	.is-sticky
 
 		+min-w768
-			.menu-main
+			&.menu-main
 				margin-top: 0
 				z-index: 99
 
@@ -98,8 +94,8 @@
 			.navbar-inverse .navbar-nav a.active:focus
 				border-bottom-width: 4px
 
-			.menu-sub
-				padding-top: 17px
+			&.menu-sub
+				padding: 17px 0
 				right: 17px
 				margin: 0
 				z-index: 100
@@ -113,7 +109,7 @@
 				width: 1006px
 				margin: 0 auto
 
-			.menu-sub
+			&.menu-sub
 				right: 50%
 				margin-right: -486px
 
@@ -189,6 +185,7 @@
 			padding: 0 100px
 
 	.scrollspy
+		outline: 0
 		padding: 100px 30px
 
 	.box-intro
@@ -217,9 +214,13 @@
 				width: 525px
 				padding-top: 50px
 
+			+min-w768
+				padding-bottom: 30px
+
 			+min-w992
 				width: 100%
 				padding-top: 86px
+				padding-bottom: 50px
 
 			.title
 
@@ -303,6 +304,9 @@
 			+min-w992
 				left: 50%
 				margin-left: -486px
+
+		.is-sticky + .logo + .logo-s
+			display: none
 
 		.logo-s
 			display: none
