@@ -156,7 +156,6 @@
 
           // as soon as scrolling starts set position of this() to fixed
           $self.css({
-            'position': 'fixed',
             'zIndex': options.zindex
           }).stop();
 
