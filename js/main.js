@@ -2,9 +2,11 @@ $(function () {
   $('.menu-main').stickyNavbar({
     sectionSelector: "scrollspy",
     stickyModeClass: "is-sticky",
+    unstickyModeClass: "unsticky",
     activeClass: "active",
     selector: "a",
-    zindex: 99
+    zindex: 99,
+    mobile: true
   });
   $('.menu-sub').stickyNavbar({
     stickyModeClass: "is-sticky",
@@ -16,7 +18,8 @@ $(function () {
     animateCSSRepeat: false,
     cssAnimation: 'fadeInDown',
     jqueryEffects: false,
-    jqueryAnim: 'slideDown'
+    jqueryAnim: 'slideDown',
+    mobile: true
   });
 });
 
