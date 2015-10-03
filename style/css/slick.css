@@ -101,8 +101,8 @@
 .slick-slide img
 {
     display: block;
-    max-width: 95%;
-    max-height: 95%;
+    max-width: 90%;
+    max-height: 90%;
     font-size: inherit;
     display: inline-block;
     vertical-align: middle;
