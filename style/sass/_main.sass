@@ -461,11 +461,12 @@
 				padding: 0
 
 			.item-gift
-				padding: 10px 10px 30px 10px
+				padding: 10px 10px 20px 10px
 
 				+min-w480
 					float: left
 					width: 50%
+					height: 426px
 
 				+min-w768
 					width: 33.33333%
@@ -487,8 +488,8 @@
 
 					img
 						display: block
-						max-width: 100%
-						max-height: 100%
+						max-width: 90%
+						max-height: 90%
 						font-size: inherit
 						display: inline-block
 						vertical-align: middle
@@ -498,6 +499,7 @@
 					font-size: 1.6rem
 					color: #1a1a1a
 					line-height: 1.5
+					margin-bottom: 5px
 
 				.product
 					font-size: 18px
@@ -505,10 +507,31 @@
 					color: #1a1a1a
 					line-height: 24px
 
-					+min-w480
-						height: 72px
-						overflow: hidden
-						text-overflow: ellipsis
+					span
+						display: block
+						font-size: 15px
+						font-size: 1.5rem
+						line-height: 21px
+						color: $grey-color-darker
+
+						em
+							position: relative
+							padding-right: 15px
+
+							&:after
+								position: absolute
+								content: "/"
+								color: #999
+								text-align: center
+								width: 15px
+								font-size: 13px
+								font-size: 1.3rem
+
+							&:last-child
+								padding-right: 0
+
+								&:after
+									display: none
 
 
 
