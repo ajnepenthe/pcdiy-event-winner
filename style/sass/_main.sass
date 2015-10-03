@@ -479,6 +479,7 @@
 					height: 200px
 					border: 1px solid $grey-color-light
 					margin-bottom: 15px
+					+transition(.2s ease-in)
 
 					&:before
 						content: ""
@@ -488,11 +489,21 @@
 
 					img
 						display: block
-						max-width: 90%
-						max-height: 90%
+						max-width: 85%
+						max-height: 85%
 						font-size: inherit
 						display: inline-block
 						vertical-align: middle
+						+transition(.2s ease-in)
+
+				&:hover .img
+					border: 2px solid $grey-color
+					+transition(.3s ease-out)
+					
+					img
+						max-width: 95%
+						max-height: 95%
+						+transition(.3s ease-out)
 
 				.brand
 					font-size: 16px
