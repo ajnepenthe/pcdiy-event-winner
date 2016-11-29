@@ -1082,7 +1082,7 @@ body
   font-size: 15px
   line-height: 1.42857143
   color: $grey-color-darkest
-  background-color: $grey-color-lightest
+  background-color: $grey-color-darkest
 
 input,
 button,
@@ -4061,10 +4061,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn
   min-height: 50px
   border: 1px solid transparent
 
-+min-w768
   .navbar-header
-    float: left
+    background-color: rgba(205,133,63,0.95)
 
+    +min-w768
+      float: left
 
 .navbar-collapse
   overflow-x: visible
@@ -4076,7 +4077,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 
 .navbar-collapse.in
   overflow-y: auto
-  +box-shadow(0 1px 0 $grey-color-darker)
+  +box-shadow(0 5px 10px rgba(0,0,0,.2))
 
   +min-w768
     +box-shadow(none)
@@ -4210,7 +4211,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn
 .navbar-nav
   margin: 0 -15px
   padding: 15px 0
-  background-color: #fff
+  background-color: rgba(253,230,170,.95)
 
 .navbar-nav > li > a
   padding-top: 15px
@@ -4503,18 +4504,16 @@ fieldset[disabled] .navbar-default .btn-link:focus
     background-color: transparent
     border-bottom-color: $gold-l
 
-.navbar-inverse .navbar-nav > li > a:focus
-
 .navbar-inverse .navbar-nav a.active,
 .navbar-inverse .navbar-nav a.active:hover,
 .navbar-inverse .navbar-nav a.active:focus
-  color: $grey-color-darkest
-  background-color: transparent
-  border-bottom-color: $grey-color-darkest
+  color: $grey-color-lightest
+  background-color: $gold-d
 
   +min-w768
     color: $gold-m
     border-bottom-color: $gold-m
+    background-color: transparent
 
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -4528,9 +4527,9 @@ fieldset[disabled] .navbar-default .btn-link:focus
 .navbar-inverse .navbar-toggle .icon-bar
   background-color: #ffffff
 
-.navbar-inverse .navbar-toggle:hover .icon-bar
+.navbar-inverse .navbar-toggle:hover .icon-bar,
 .navbar-inverse .navbar-toggle:focus .icon-bar
-  background-color: #392366
+  background-color: $gold-dd
 
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form
@@ -4630,9 +4629,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus
 .pagination > li:first-child > a,
 .pagination > li:first-child > span
   margin-left: 0
-
-.pagination > li:last-child > a,
-.pagination > li:last-child > span
 
 .pagination > li > a:hover,
 .pagination > li > span:hover,
