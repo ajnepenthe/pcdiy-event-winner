@@ -3,14 +3,12 @@
 
 	+min-w1024
 		width: 1006px
-		+box-shadow(0 0 20px rgba(0,0,0,.15))
 
 	.menu-main
 		position: fixed
 		width: 100%
 		top: 0
 		left: 0
-		background-color: rgba(233,198,71,.95)
 		z-index: 98
 
 		+min-w768
@@ -46,17 +44,18 @@
 				text-align: center
 
 				&:hover
-					color: #392366
+					color: $gold-l
 
 				+min-w768
 					width: 30px
 					height: 30px
-					color: #392366
+					color: $grey-color-lightest
 					background-color: $gold-m
 					+border-radius(50%)
 
 					&:hover
 						background-color: $gold-l
+						color: $gold-d
 
 				.fa
 					font-size: 24px
@@ -77,7 +76,7 @@
 
 			.navbar-nav
 				margin: 0
-				background-color: rgba(0,0,0,.9)
+				background-color: rgba(21,22,23,.9)
 				border-bottom: none
 
 				& > li
@@ -117,7 +116,7 @@
 	.btn-vote
 		display: block
 		width: 170px
-		height: 50px
+		height: 56px
 		line-height: 24px
 		padding: 13px 0
 		font-size: 16px
@@ -125,7 +124,8 @@
 		text-align: center
 		text-decoration: none
 		margin: 0 auto
-		+border-radius(25px)
+		border: 3px solid $gold-m
+		+border-radius(28px)
 
 	h2
 		text-align: center
@@ -194,7 +194,7 @@
 		background-position: 50%
 		background-repeat: no-repeat
 		background-image: url(../../images/bg-intro-1024x800.png)
-		background-color: #200555
+		background-color: #151617
 		padding: 60px 0 40px 0
 
 		+min-w768
@@ -258,18 +258,19 @@
 						background-image: url(../../images/item-intro-date-l.png)
 
 					+min-w992
-						width: 168px
+						width: 210px
 						height: 154px
-						margin: 0 0 0 11px
+						margin: 0
 						background-image: url(../../images/item-intro-date-b.png)
 
 				.btn-vote
-					background-color: #fff
+					color: $gold-m
 					margin-top: 20px
 
 					&:hover
-						background-color: $gold-m
-						color: #fff
+						border-color: $gold-d
+						background-color: $gold-d
+						color: $grey-color-lightest
 
 					+min-w480
 						margin-top: 30px
@@ -324,6 +325,10 @@
 				background-color: $gold-m
 				+border-radius(50%)
 				text-align: center
+				background-image: url(../../images/logo-s.png)
+				background-repeat: no-repeat
+				background-position: 5px 5px
+				background-size: 19px 19px
 
 				&:hover
 					background-color: $gold-l
@@ -349,7 +354,8 @@
 				top: 33px
 				left: 50%
 				margin-left: -105px
-				border: 3px solid $gold-m
+				border: 5px solid $gold-m
+				+border-radius(20px)
 
 				+min-w480
 					width: 280px
@@ -384,11 +390,12 @@
 
 		.btn-vote
 			margin-top: 100px
-			background-color: $gold-dd
-			color: #fff
+			color: $gold-m
 
 			&:hover
-				background-color: $gold-m
+				color: $grey-color-lightest
+				border-color: $gold-d
+				background-color: $gold-d
 
 	.box-way
 		background-color: #f6f6f4
@@ -431,11 +438,12 @@
 
 				.btn-vote
 					margin-top: 30px
-					background-color: $gold-dd
-					color: #fff
+					color: $gold-m
 
 					&:hover
-						background-color: $gold-m
+						color: $grey-color-lightest
+						border-color: $gold-d
+						background-color: $gold-d
 
 					+min-w640
 						margin-top: 32px
@@ -477,8 +485,9 @@
 				.img
 					text-align: center
 					height: 200px
-					border: 1px solid $grey-color-light
+					border: 1px solid $gold-l
 					margin-bottom: 15px
+					+border-radius(3px)
 					+transition(.2s ease-in)
 
 					&:before
@@ -669,7 +678,6 @@
 		background-color: $gold-m
 		padding: 60px 30px 40px
 
-
 		ul
 			position: relative
 			margin: 0 auto 30px
@@ -684,11 +692,11 @@
 					color: $gold-m
 					width: 30px
 					height: 30px
-					background-color: #fff
+					background-color: $grey-color-lightest
 					+border-radius(50%)
 
 					&:hover
-						color: #392366
+						color: $gold-d
 						background-color: $gold-l
 
 					.fa
